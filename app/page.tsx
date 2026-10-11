@@ -169,7 +169,7 @@ export default function Home() {
               <div className="project-art">
                 {index === 0 ? <div className="mini-gift"><div className="gift-ribbon" /><div className="gift-bow" /><Sparkles size={25} /></div> :
                   index === 1 ? <div className="store-art"><span className="store-tag">NORTHSTAR / GOODS</span><div className="store-shapes"><i /><i /><i /></div><strong>Objects for<br />everyday living.</strong><span className="store-pill">VIEW COLLECTION ↗</span></div> :
-                  <div className="dashboard-art"><div className="dash-sidebar"><b>cd.</b><i /><i /><i /><i /></div><div className="dash-main"><span>OVERVIEW</span><strong>Your workspace</strong><div className="dash-metrics"><i /><i /><i /></div><div className="dash-chart"><i /><i /><i /><i /><i /><i /><i /></div></div>}
+                  <div className="dashboard-art"><div className="dash-sidebar"><b>cd.</b><i /><i /><i /><i /></div><div className="dash-main"><span>OVERVIEW</span><strong>Your workspace</strong><div className="dash-metrics"><i /><i /><i /></div><div className="dash-chart"><i /><i /><i /><i /><i /><i /><i /></div></div></div>}
                 <span className="project-counter">0{index + 1} / 03</span>
               </div>
               <div className="project-info"><span className="project-tag">{project.tag}</span><h3>{project.title}</h3><p>{project.description}</p><div className="project-bottom"><span>{project.note}</span><ArrowUpRightIcon /></div></div>
@@ -206,7 +206,7 @@ export default function Home() {
           <div className="contact-orb orb-one" /><div className="contact-orb orb-two" />
           <div className="contact-copy"><SectionLabel>HAVE A PROJECT IN MIND?</SectionLabel><h2>Let&apos;s build something <span className="gradient-text">useful.</span></h2><p>Tell us what you&apos;re trying to achieve. We&apos;ll discuss the scope, timeline, and a sensible next step.</p></div>
           <div className="contact-actions">
-            <a className="button button-primary" href="mailto:hello@novawebstudio.example?subject=Website%20project%20enquiry">Email about a project <ArrowRight size={17} /></a>
+            <a className="button button-primary" href="mailto:fridayw007@gmail.com?subject=Website%20project%20enquiry">Email about a project <ArrowRight size={17} /></a>
             <span>Replace this demo email before publishing.</span>
           </div>
         </div>
