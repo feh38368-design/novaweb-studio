@@ -212,12 +212,12 @@ export default function Home() {
           <div className="contact-copy"><SectionLabel>HAVE A PROJECT IN MIND?</SectionLabel><h2>Let&apos;s build something <span className="gradient-text">useful.</span></h2><p>Tell us what you&apos;re trying to achieve. We&apos;ll discuss the scope, timeline, and a sensible next step.</p></div>
           <div className="contact-actions">
             <a className="button button-primary" href="mailto:fridayw007@gmail.com?subject=Website%20project%20enquiry">Email about a project <ArrowRight size={17} /></a>
-            <span>Replace this demo email before publishing.</span>
+            <span>Send a short brief and we’ll take it from there.</span>
           </div>
         </div>
       </section>
 
-      <footer className="site-footer"><a className="brand" href="#home"><span className="brand-mark"><Code2 size={19} /></span><span>novaweb<span className="brand-light"> studio</span></span></a><p>Independent digital studio · Websites & web applications</p><a href="#home" className="back-top">BACK TO TOP ↑</a><small>© {new Date().getFullYear()} NovaWeb Studio. Demo brand — update details before launch.</small></footer>
+      <footer className="site-footer"><a className="brand" href="#home"><span className="brand-mark"><Code2 size={19} /></span><span>novaweb<span className="brand-light"> studio</span></span></a><p>Independent digital studio · Websites & web applications</p><a href="#home" className="back-top">BACK TO TOP ↑</a><small>© {new Date().getFullYear()} NovaWeb Studio. Independent web design & development.</small></footer>
     </main>
   );
 }
