@@ -57,7 +57,8 @@ const projects = [
     title: "GiftGrip",
     description:
       "A gift-offer platform demonstrating user flows, dashboards, database-backed features, and admin workflows.",
-    note: "Personal project"
+    note: "Personal project",
+    href: "https://giftgrip.vercel.app"
   },
   {
     tag: "Business website · Concept",
@@ -167,12 +168,16 @@ export default function Home() {
           <div className="project-grid">
             {projects.map((project, index) => <article className={`project-card project-${index + 1}`} key={project.title}>
               <div className="project-art">
-                {index === 0 ? <div className="mini-gift"><div className="gift-ribbon" /><div className="gift-bow" /><Sparkles size={25} /></div> :
+                {index === 0 ? <div className="giftgrip-preview">
+                  <div className="gg-browser-bar"><span className="gg-brand"><span className="gg-brand-icon">✦</span> GiftGrip</span><span className="gg-nav-lines"><i /><i /><i /></span><span className="gg-signin">Sign in</span></div>
+                  <div className="gg-preview-body"><div className="gg-copy"><span className="gg-kicker">EXCLUSIVE REWARDS</span><strong>Big gifts.<br /><em>Real excitement.</em></strong><small>Discover gifts and track your rewards.</small><span className="gg-button">Explore gifts <ArrowRight size={9} /></span></div><div className="gg-gift-scene"><div className="gg-glow" /><div className="gg-gift-box"><i /><b /></div><div className="gg-bow"><i /><i /><b /></div><Sparkles className="gg-sparkle" size={15} /></div></div>
+                  <div className="gg-bottom-row"><span><Check size={9} /> Gift claims</span><span><Check size={9} /> Delivery tracking</span><span><Check size={9} /> Secure flow</span></div>
+                </div> :
                   index === 1 ? <div className="store-art"><span className="store-tag">NORTHSTAR / GOODS</span><div className="store-shapes"><i /><i /><i /></div><strong>Objects for<br />everyday living.</strong><span className="store-pill">VIEW COLLECTION ↗</span></div> :
                   <div className="dashboard-art"><div className="dash-sidebar"><b>cd.</b><i /><i /><i /><i /></div><div className="dash-main"><span>OVERVIEW</span><strong>Your workspace</strong><div className="dash-metrics"><i /><i /><i /></div><div className="dash-chart"><i /><i /><i /><i /><i /><i /><i /></div></div></div>}
                 <span className="project-counter">0{index + 1} / 03</span>
               </div>
-              <div className="project-info"><span className="project-tag">{project.tag}</span><h3>{project.title}</h3><p>{project.description}</p><div className="project-bottom"><span>{project.note}</span><ArrowUpRightIcon /></div></div>
+              <div className="project-info"><span className="project-tag">{project.tag}</span><h3>{project.title}</h3><p>{project.description}</p><div className="project-bottom"><span>{project.note}</span>{project.href ? <a className="arrow-up-right" href={project.href} target="_blank" rel="noreferrer" aria-label="Visit the live GiftGrip website"><ArrowRight size={17} /></a> : <ArrowUpRightIcon />}</div></div>
             </article>)}
           </div>
         </div>
