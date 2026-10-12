@@ -211,7 +211,7 @@ export default function Home() {
           <div className="contact-orb orb-one" /><div className="contact-orb orb-two" />
           <div className="contact-copy"><SectionLabel>HAVE A PROJECT IN MIND?</SectionLabel><h2>Let&apos;s build something <span className="gradient-text">useful.</span></h2><p>Tell us what you&apos;re trying to achieve. We&apos;ll discuss the scope, timeline, and a sensible next step.</p></div>
           <div className="contact-actions">
-            <a className="button button-primary" href="mailto:fridayw007@gmail.com?subject=Website%20project%20enquiry">Email about a project <ArrowRight size={17} /></a>
+            <a className="button button-primary" href="mailto:fridayw007@gmail.com?subject=Website%20Project%20Inquiry%20%E2%80%94%20NovaWeb%20Studio&body=Hi%20NovaWeb%20Studio%2C%0A%0AI%27m%20interested%20in%20discussing%20a%20website%20project.%0A%0AProject%20type%3A%0ABusiness%20name%3A%0AWebsite%20or%20reference%20link%20%28if%20available%29%3A%0AFeatures%20I%20need%3A%0ABudget%20range%3A%0APreferred%20completion%20date%3A%0A%0APlease%20let%20me%20know%20the%20next%20steps.%0A%0AThank%20you%21">Email about a project <ArrowRight size={17} /></a>
             <span>Send a short brief and we’ll take it from there.</span>
           </div>
         </div>
