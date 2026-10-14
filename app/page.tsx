@@ -130,8 +130,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="floating-card float-top"><span className="float-icon"><Check size={16} /></span><div><strong>Made for mobile</strong><small>Every screen matters</small></div></div>
-          <div className="floating-card float-bottom"><span className="float-code"><Code2 size={18} /></span><div><strong>Design meets function</strong><small>Useful by design</small></div></div>
           <div className="hero-index">Nº 001 <span>— DIGITAL EXPERIENCES</span></div>
         </div>
       </section>
