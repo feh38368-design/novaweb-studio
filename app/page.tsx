@@ -65,14 +65,16 @@ const projects = [
     title: "Northstar Goods",
     description:
       "A sample storefront concept showing how a small retail brand could present products and invite enquiries.",
-    note: "Concept demo"
+    note: "Live demo",
+    href: "https://shop-northstar.vercel.app"
   },
   {
     tag: "Dashboard · Concept",
     title: "ClearDesk",
     description:
       "A sample operations dashboard concept for organizing customers, orders, and day-to-day business activity.",
-    note: "Concept demo"
+    note: "Concept demo · Ask about a build",
+    href: "mailto:novawebstudio.digital@gmail.com?subject=Dashboard%20project%20inquiry%20%E2%80%94%20ClearDesk%20concept&body=Hi%20NovaWeb%20Studio%2C%0A%0AI%27d%20like%20to%20discuss%20a%20dashboard%20similar%20to%20the%20ClearDesk%20concept.%0A%0AFeatures%20I%20need%3A%0ABudget%20range%3A%0APreferred%20timeline%3A%0A%0AThank%20you."
   }
 ];
 
@@ -175,7 +177,7 @@ export default function Home() {
                   <div className="dashboard-art"><div className="dash-sidebar"><b>cd.</b><i /><i /><i /><i /></div><div className="dash-main"><span>OVERVIEW</span><strong>Your workspace</strong><div className="dash-metrics"><i /><i /><i /></div><div className="dash-chart"><i /><i /><i /><i /><i /><i /><i /></div></div></div>}
                 <span className="project-counter">0{index + 1} / 03</span>
               </div>
-              <div className="project-info"><span className="project-tag">{project.tag}</span><h3>{project.title}</h3><p>{project.description}</p><div className="project-bottom"><span>{project.note}</span>{project.href ? <a className="arrow-up-right" href={project.href} target="_blank" rel="noreferrer" aria-label="Visit the live GiftGrip website"><ArrowRight size={17} /></a> : <ArrowUpRightIcon />}</div></div>
+              <div className="project-info"><span className="project-tag">{project.tag}</span><h3>{project.title}</h3><p>{project.description}</p><div className="project-bottom"><span>{project.note}</span><a className="arrow-up-right" href={project.href} target={project.title === "ClearDesk" ? undefined : "_blank"} rel={project.title === "ClearDesk" ? undefined : "noreferrer"} aria-label={project.title === "ClearDesk" ? "Ask about building a dashboard like ClearDesk" : `Visit the live ${project.title} website`}><ArrowRight size={17} /></a></div></div>
             </article>)}
           </div>
         </div>
