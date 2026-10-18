@@ -61,11 +61,11 @@ const projects = [
     href: "https://giftgrip.vercel.app"
   },
   {
-    tag: "Business website · Concept",
+    tag: "E-commerce · Live demo",
     title: "Northstar Goods",
     description:
-      "A sample storefront concept showing how a small retail brand could present products and invite enquiries.",
-    note: "Live demo",
+      "A modern storefront featuring product discovery, a shopping cart, and an interactive demo checkout.",
+    note: "Live demo · Demo checkout",
     href: "https://shop-northstar.vercel.app"
   },
   {
@@ -173,7 +173,14 @@ export default function Home() {
                   <div className="gg-preview-body"><div className="gg-copy"><span className="gg-kicker">EXCLUSIVE REWARDS</span><strong>Big gifts.<br /><em>Real excitement.</em></strong><small>Discover gifts and track your rewards.</small><span className="gg-button">Explore gifts <ArrowRight size={9} /></span></div><div className="gg-gift-scene"><div className="gg-glow" /><div className="gg-gift-box"><i /><b /></div><div className="gg-bow"><i /><i /><b /></div><Sparkles className="gg-sparkle" size={15} /></div></div>
                   <div className="gg-bottom-row"><span><Check size={9} /> Gift claims</span><span><Check size={9} /> Delivery tracking</span><span><Check size={9} /> Secure flow</span></div>
                 </div> :
-                  index === 1 ? <div className="store-art"><span className="store-tag">NORTHSTAR / GOODS</span><div className="store-shapes"><i /><i /><i /></div><strong>Objects for<br />everyday living.</strong><span className="store-pill">VIEW COLLECTION ↗</span></div> :
+                  index === 1 ? <div className="store-preview">
+                    <div className="store-browser-bar"><span className="store-browser-dots"><i /><i /><i /></span><span>shop-northstar.vercel.app</span><span className="store-browser-lock">↗</span></div>
+                    <div className="store-page">
+                      <div className="store-nav"><strong>NORTHSTAR <em>GOODS</em></strong><span>SHOP&nbsp;&nbsp; ABOUT&nbsp;&nbsp; JOURNAL</span><b> BAG (0)</b></div>
+                      <div className="store-hero-copy"><span className="store-tag">THOUGHTFULLY CHOSEN OBJECTS</span><strong>Make space for<br /><em>everyday good.</em></strong><small>Considered pieces for slower, simpler living.</small><span className="store-pill">EXPLORE THE COLLECTION&nbsp; ↗</span></div>
+                      <div className="store-product-row"><div className="store-product store-product-one"><i /></div><div className="store-product store-product-two"><i /></div><div className="store-product store-product-three"><i /></div></div>
+                    </div>
+                  </div> :
                   <div className="dashboard-art"><div className="dash-sidebar"><b>cd.</b><i /><i /><i /><i /></div><div className="dash-main"><span>OVERVIEW</span><strong>Your workspace</strong><div className="dash-metrics"><i /><i /><i /></div><div className="dash-chart"><i /><i /><i /><i /><i /><i /><i /></div></div></div>}
                 <span className="project-counter">0{index + 1} / 03</span>
               </div>
